@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import HelloMDX from "./hello.mdx";
+import HelloMDX from "../content/hello.mdx";
 
 export default function Home() {
   return (

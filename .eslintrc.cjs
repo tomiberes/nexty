@@ -48,7 +48,7 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ["*.{ts,tsx,mdx}"],
+      files: ["*" + MOD_EXT],
       extends: [...JSBaseExtends, ...TSBaseExtends, ...JSReactNextExtends],
       rules: {
         ...CodeRules,
