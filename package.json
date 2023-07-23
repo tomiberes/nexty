@@ -4,15 +4,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node --inspect node_modules/.bin/next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "9.7.3",
+    "clsx": "2.0.0",
+    "d3": "7.8.5",
+    "d3-geo": "3.1.0",
+    "lodash-es": "4.17.21",
     "next": "13.4.9",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "server-only": "0.0.1",
+    "topojson-client": "3.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.6",
@@ -21,10 +28,15 @@
     "@mdx-js/react": "2.3.0",
     "@next/eslint-plugin-next": "13.4.9",
     "@next/mdx": "13.4.9",
+    "@types/d3": "7.4.0",
+    "@types/d3-geo": "3.0.3",
+    "@types/geojson": "7946.0.10",
+    "@types/lodash-es": "4.17.8",
     "@types/mdx": "2.0.5",
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "@types/topojson-client": "3.1.1",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "autoprefixer": "10.4.14",
@@ -34,10 +46,13 @@
     "eslint-plugin-mdx": "2.1.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
+    "ndjson-cli": "0.3.1",
     "postcss": "8.4.25",
     "prettier": "2.8.8",
     "sass": "1.63.6",
     "tailwindcss": "3.3.2",
+    "topojson-server": "3.0.1",
+    "topojson-simplify": "3.0.3",
     "typescript": "5.1.6"
   },
   "engines": {
